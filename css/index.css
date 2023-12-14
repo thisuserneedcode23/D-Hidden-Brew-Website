@@ -1,0 +1,88 @@
+.bg{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 85%;
+    min-height: 88%;
+    object-fit: cover;
+    z-index: -1000;
+   
+}
+.nav{
+    text-align: right;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -7px;
+    background-color: lightgray;
+    padding: 40px;
+    box-shadow: 5px 10px 20px black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+}
+.text{
+    position: absolute;
+    text-align: justify;
+    left: 560px;
+    bottom: 240px;
+    color: burlywood;
+    font-size: 20px;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.logo{
+    height: 102px;
+    float: left;
+    margin-left: 5px;
+    margin-top: -40px;
+}
+.active{
+    text-decoration: underline red;
+    font-weight: bold;
+}
+.active:hover{
+    background-color: lightgoldenrodyellow;
+    transition: 0.2s;
+}
+.new{
+    font-weight: bold;
+}
+.ab{
+    font-weight: bold;
+}
+.ac{
+    font-weight: bold;
+}
+.new:hover{
+    background-color: lightgoldenrodyellow;
+    transition: 0.2s;
+}
+.ab:hover{
+    background-color: lightgoldenrodyellow;
+    transition: 0.2s;
+}
+.ac:hover{
+    background-color: lightgoldenrodyellow;
+    transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        text-align: center; /* Center align navigation links */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    
+    .text {
+        font-size: 18px; /* Reduce text size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+        bottom: auto; /* Remove bottom positioning */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust centering */
+    }
+}
